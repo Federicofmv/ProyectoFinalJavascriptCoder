@@ -1,0 +1,1013 @@
+@media only screen and (max-width:576px) {
+  body {
+    background-color:rgb(255, 255, 255) ;
+}
+.header {
+  &__divTitulo {
+    width: 100%;
+    height: 40px;
+    background: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__titulo {
+    margin: 0;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+}
+.main {
+  &__div {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+  }
+  &__subtitulo {
+    background: rgb(39, 39, 39);
+    padding: 15px 0 15px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__texto {
+    color: rgb(255, 255, 255);    
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 30px;
+    text-align: center;    
+    margin: 0;    
+    font-weight: 400;
+    letter-spacing: 2px;
+    }
+  &__img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;  
+  }
+
+}
+.divProductos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center; 
+  column-gap: 50px; 
+  row-gap: 50px;
+
+  &__div {
+    margin: 50px 0 50px 0;      
+    text-align: center;
+   
+  }
+  &__imagen {
+    width: 70%;
+    margin: 30px auto 30px auto;
+    transition: 1s;    
+  }
+  &__imagen:hover {
+    transform: scale(1.05);
+  }
+  &__texto {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 75%;
+  }
+  &__tamanio {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  &__marca {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    color: rgb(96, 119, 182);
+    margin: 0;
+
+  }
+  &__boton {
+    margin: 10px 0 10px 0;    
+    border-radius: 5px;
+    color: rgb(235, 240, 253);
+    margin-bottom: 0px;
+    transition: .5s;
+  }
+  &__boton:hover {
+    background-color: rgb(44, 44, 44);
+    border-color: rgb(44, 44, 44);    
+    color:rgb(168, 168, 168);
+  }
+  &__precio {
+    font-size: 20px;
+    color: rgb(93, 93, 93);
+    font-family: "Hind Siliguri", sans-serif;    
+  }
+  &__precioConDescuento {
+    font-size: 20px;
+    color: rgb(96, 119, 182);
+    font-family: "Hind Siliguri", sans-serif;
+    margin-top: 20px;
+  }
+}
+.botonBuscar {
+    background-color:rgb(187, 205, 255);
+    color: rgb(39, 39, 39);
+    border-color: rgb(187, 205, 255);
+    
+}
+.botonBuscar:hover {
+    background-color:rgb(96, 119, 182);
+    color: rgb(235, 240, 253);
+    border-color: rgb(96, 119, 182);
+    
+}
+span {
+    color: rgb(68, 68, 68);
+    letter-spacing: 3px;
+}
+
+.footer__div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color:rgb(187, 205, 255) ;
+    color: antiquewhite;
+}
+.iconoNav {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0px;
+}
+.logoMarca {
+    &__logo {
+        width: 100px;
+        height: 100px;
+
+    }
+    &__texto {
+        font-size: 30px;
+        color: white;
+    }
+}
+.footerDiv1 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;
+        padding: 0;
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif;
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {        
+        margin: 20px 0px 20px 0px;
+    }
+}
+.footerDiv2 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;  
+        padding: 0;      
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif; 
+        font-size: 17px;                
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+.carousel-item {
+    width: 800px;
+    height: 250px;
+    
+}
+.carousel-control-next{
+  z-index: -1;
+  display: none;
+}
+.carousel-control-prev{
+  z-index: -1;
+  display: none;
+}
+#carouselExampleFade {    
+    width: 800px;
+    height: 250px;
+    margin: 30px auto 50px auto;    
+    
+}
+.carousel-inner {      
+    z-index: -1;
+    width: 800px;
+    height: 250px;    
+    border-radius: 15px;
+}
+.d-block {
+    margin: auto;
+    width: 800px;
+    height: 250px;
+}
+.menuCarrito {
+  position:absolute;
+  right: 30px;
+}
+.submenu {
+  position: relative;  
+  z-index: 1;  
+}
+ul {
+  list-style: none;  
+  margin: auto;
+}
+
+.submenu__img {
+  width: 30px;
+
+}
+.submenu #carrito{
+  display: none;  
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  min-height: 100px;
+  min-width: 550px;
+  border-radius: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  
+}
+#lista-carrito {  
+  width: 100%;
+}
+th {
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;
+}
+#vaciarCarrito {
+  font-size: 15px;
+  font-family: "PT Sans Narrow", sans-serif; 
+  width:80%;
+  margin: 30px auto 0px auto;  
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;  
+  border-radius: 5px;
+  transition: .2s;
+  
+}
+#vaciarCarrito:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+
+}
+.carritoImagen {
+  width: 100px;
+  height: 100px;   
+  
+}
+
+tr td {
+  padding-top: 30px;
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;  
+}
+.botonEliminarImg {
+  width: 30px;
+}
+.botonComprar {  
+  font-family: "PT Sans Narrow", sans-serif; 
+  font-size: 20px; 
+  text-decoration: none; 
+  color: black;
+  background-color: rgb(187, 205, 255);
+  border: 1px solid rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  transition: .5s;
+}
+.botonComprar:hover {
+  color: white;
+  background-color:rgb(130, 152, 214) ;
+
+}
+.textoTotal {
+  font-family: "PT Sans Narrow", sans-serif; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (min-width:576px) {
+  body {
+    background-color:rgb(255, 255, 255) ;
+}
+.header {
+  &__divTitulo {
+    width: 100%;
+    height: 40px;
+    background: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__titulo {
+    margin: 0;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+}
+.main {
+  &__div {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+  }
+  &__subtitulo {
+    background: rgb(39, 39, 39);
+    padding: 15px 0 15px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    
+  }
+  &__texto {
+    color: rgb(255, 255, 255);    
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 30px;
+    text-align: center;    
+    margin: 0;    
+    font-weight: 400;
+    letter-spacing: 2px;
+    }
+  &__img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;  
+  }
+
+}
+.divProductos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center; 
+  column-gap: 50px; 
+  row-gap: 50px;
+
+  &__div {
+    margin: 50px 0 50px 0;      
+    text-align: center;
+   
+  }
+  &__imagen {
+    width: 70%;
+    margin: 30px auto 30px auto;
+    transition: 1s;    
+  }
+  &__imagen:hover {
+    transform: scale(1.05);
+  }
+  &__texto {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 75%;
+  }
+  &__tamanio {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  &__marca {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    color: rgb(96, 119, 182);
+    margin: 0;
+
+  }
+  &__boton {
+    margin: 10px 0 10px 0;    
+    border-radius: 5px;
+    color: rgb(235, 240, 253);
+    margin-bottom: 0px;
+    transition: .5s;
+  }
+  &__boton:hover {
+    background-color: rgb(44, 44, 44);
+    border-color: rgb(44, 44, 44);    
+    color:rgb(168, 168, 168);
+  }
+  &__precio {
+    font-size: 20px;
+    color: rgb(93, 93, 93);
+    font-family: "Hind Siliguri", sans-serif;    
+  }
+  &__precioConDescuento {
+    font-size: 20px;
+    color: rgb(96, 119, 182);
+    font-family: "Hind Siliguri", sans-serif;
+    margin-top: 20px;
+  }
+}
+.botonBuscar {
+    background-color:rgb(187, 205, 255);
+    color: rgb(39, 39, 39);
+    border-color: rgb(187, 205, 255);
+    
+}
+.botonBuscar:hover {
+    background-color:rgb(96, 119, 182);
+    color: rgb(235, 240, 253);
+    border-color: rgb(96, 119, 182);
+    
+}
+span {
+    color: rgb(68, 68, 68);
+    letter-spacing: 3px;
+}
+
+.footer__div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color:rgb(187, 205, 255) ;
+    color: antiquewhite;
+}
+.iconoNav {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0px;
+}
+.logoMarca {
+    &__logo {
+        width: 100px;
+        height: 100px;
+
+    }
+    &__texto {
+        font-size: 30px;
+        color: white;
+    }
+}
+.footerDiv1 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;
+        padding: 0;
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif;
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {        
+        margin: 20px 0px 20px 0px;
+    }
+}
+.footerDiv2 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;  
+        padding: 0;      
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif; 
+        font-size: 17px;                
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+.carousel-item {
+    width: 800px;
+    height: 250px;
+    
+}
+.carousel-control-next{
+  z-index: -1;
+  display: none;
+}
+.carousel-control-prev{
+  z-index: -1;
+  display: none;
+}
+#carouselExampleFade {    
+    width: 800px;
+    height: 250px;
+    margin: 30px auto 50px auto;    
+    
+}
+.carousel-inner {      
+    z-index: -1;
+    width: 800px;
+    height: 250px;    
+    border-radius: 15px;
+}
+.d-block {
+    margin: auto;
+    width: 800px;
+    height: 250px;
+}
+.menuCarrito {
+  position:absolute;
+  right: 30px;
+}
+.submenu {
+  position: relative;  
+  z-index: 1;  
+}
+ul {
+  list-style: none;  
+  margin: auto;
+}
+
+.submenu__img {
+  width: 30px;
+
+}
+.submenu #carrito{
+  display: none;  
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  min-height: 100px;
+  min-width: 550px;
+  border-radius: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  
+}
+#lista-carrito {  
+  width: 100%;
+}
+th {
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;
+}
+#vaciarCarrito {
+  font-size: 15px;
+  font-family: "PT Sans Narrow", sans-serif; 
+  width:80%;
+  margin: 30px auto 0px auto;  
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;  
+  border-radius: 5px;
+  transition: .2s;
+  
+}
+#vaciarCarrito:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+
+}
+.carritoImagen {
+  width: 100px;
+  height: 100px;   
+  
+}
+
+tr td {
+  padding-top: 30px;
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;  
+}
+.botonEliminarImg {
+  width: 30px;
+}
+.botonComprar {  
+  font-family: "PT Sans Narrow", sans-serif; 
+  font-size: 20px; 
+  text-decoration: none; 
+  color: black;
+  background-color: rgb(187, 205, 255);
+  border: 1px solid rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  transition: .5s;
+}
+.botonComprar:hover {
+  color: white;
+  background-color:rgb(130, 152, 214) ;
+
+}
+.textoTotal {
+  font-family: "PT Sans Narrow", sans-serif; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (min-width:1024px) {
+body {
+    background-color:rgb(255, 255, 255) ;
+}
+.header {
+  &__divTitulo {
+    width: 100%;
+    height: 40px;
+    background: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__titulo {
+    margin: 0;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+}
+.main {
+  &__div {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+  }
+  &__subtitulo {
+    background: rgb(39, 39, 39);
+    padding: 15px 0 15px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__texto {
+    color: rgb(255, 255, 255);    
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 30px;
+    text-align: center;    
+    margin: 0;    
+    font-weight: 400;
+    letter-spacing: 2px;
+    }
+  &__img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;  
+  }
+
+}
+.divProductos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center; 
+  column-gap: 50px; 
+  row-gap: 50px;
+
+  &__div {
+    margin: 50px 0 50px 0;      
+    text-align: center;
+   
+  }
+  &__imagen {
+    width: 70%;
+    margin: 30px auto 30px auto;
+    transition: 1s;    
+  }
+  &__imagen:hover {
+    transform: scale(1.05);
+  }
+  &__texto {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 75%;
+  }
+  &__tamanio {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  &__marca {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    color: rgb(96, 119, 182);
+    margin: 0;
+
+  }
+  &__boton {
+    margin: 10px 0 10px 0;    
+    border-radius: 5px;
+    color: rgb(235, 240, 253);
+    margin-bottom: 0px;
+    transition: .5s;
+  }
+  &__boton:hover {
+    background-color: rgb(44, 44, 44);
+    border-color: rgb(44, 44, 44);    
+    color:rgb(168, 168, 168);
+  }
+  &__precio {
+    font-size: 20px;
+    color: rgb(93, 93, 93);
+    font-family: "Hind Siliguri", sans-serif;    
+  }
+  &__precioConDescuento {
+    font-size: 20px;
+    color: rgb(96, 119, 182);
+    font-family: "Hind Siliguri", sans-serif;
+    margin-top: 20px;
+  }
+}
+.botonBuscar {
+    background-color:rgb(187, 205, 255);
+    color: rgb(39, 39, 39);
+    border-color: rgb(187, 205, 255);
+    
+}
+.botonBuscar:hover {
+    background-color:rgb(96, 119, 182);
+    color: rgb(235, 240, 253);
+    border-color: rgb(96, 119, 182);
+    
+}
+span {
+    color: rgb(68, 68, 68);
+    letter-spacing: 3px;
+}
+
+.footer__div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color:rgb(187, 205, 255) ;
+    color: antiquewhite;
+}
+.iconoNav {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0px;
+}
+.logoMarca {
+    &__logo {
+        width: 100px;
+        height: 100px;
+
+    }
+    &__texto {
+        font-size: 30px;
+        color: white;
+    }
+}
+.footerDiv1 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;
+        padding: 0;
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif;
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {        
+        margin: 20px 0px 20px 0px;
+    }
+}
+.footerDiv2 {
+    text-decoration: none;
+    &__lista {
+        list-style: none;  
+        padding: 0;      
+
+    }
+    &__enlace {
+        text-decoration: none;
+        color: rgb(65, 106, 173);
+        font-family: "PT Sans Narrow", sans-serif; 
+        font-size: 17px;                
+    }
+    &__enlace:hover {
+        color: white;
+    }
+    &__item {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+.carousel-item {
+    width: 800px;
+    height: 250px;
+    
+}
+.carousel-control-next{
+  z-index: -1;
+  display: none;
+}
+.carousel-control-prev{
+  z-index: -1;
+  display: none;
+}
+#carouselExampleFade {    
+    width: 800px;
+    height: 250px;
+    margin: 30px auto 50px auto;    
+    
+}
+.carousel-inner {      
+    z-index: -1;
+    width: 800px;
+    height: 250px;    
+    border-radius: 15px;
+}
+.d-block {
+    margin: auto;
+    width: 800px;
+    height: 250px;
+}
+.menuCarrito {
+  position:absolute;
+  right: 30px;
+}
+.submenu {
+  position: relative;  
+  z-index: 1;  
+}
+ul {
+  list-style: none;  
+  margin: auto;
+}
+
+.submenu__img {
+  width: 30px;
+
+}
+.submenu #carrito{
+  display: none;  
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  min-height: 100px;
+  min-width: 550px;
+  border-radius: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  
+}
+#lista-carrito {  
+  width: 100%;
+}
+th {
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;
+}
+#vaciarCarrito {
+  font-size: 15px;
+  font-family: "PT Sans Narrow", sans-serif; 
+  width:80%;
+  margin: 30px auto 0px auto;  
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;  
+  border-radius: 5px;
+  transition: .2s;
+  
+}
+#vaciarCarrito:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+
+}
+.carritoImagen {
+  width: 100px;
+  height: 100px;   
+  
+}
+
+tr td {
+  padding-top: 30px;
+  font-family: "PT Sans Narrow", sans-serif;  
+  text-align: center;  
+}
+.botonEliminarImg {
+  width: 30px;
+}
+.botonComprar {  
+  font-family: "PT Sans Narrow", sans-serif; 
+  font-size: 20px; 
+  text-decoration: none; 
+  color: black;
+  background-color: rgb(187, 205, 255);
+  border: 1px solid rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  transition: .5s;
+}
+.botonComprar:hover {
+  color: white;
+  background-color:rgb(130, 152, 214) ;
+
+}
+.textoTotal {
+  font-family: "PT Sans Narrow", sans-serif; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+}

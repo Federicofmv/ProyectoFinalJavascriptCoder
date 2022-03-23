@@ -1,0 +1,197 @@
+body {
+  background-color: white;
+}
+
+.header__divTitulo {
+  width: 100%;
+  height: 40px;
+  background: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__titulo {
+  margin: 0;
+  margin-left: 15px;
+  color: white;
+  font-size: 15px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.main__subtitulo {
+  background: #bbcdff;
+  padding: 15px 0 15px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__texto {
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.divProductos {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divProductos__div {
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+.divProductos__imagen {
+  width: 75%;
+  margin: 10px 10px 10px 10px;
+  transition: 1s;
+}
+.divProductos__imagen:hover {
+  transform: scale(1.1);
+}
+.divProductos__texto {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  margin-top: 20px;
+  width: 75%;
+}
+.divProductos__marca {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  color: #6077b6;
+}
+.divProductos__boton {
+  margin: 10px 0 10px 0;
+  background-color: #7e9ae6;
+  border-color: #7e9ae6;
+  border-radius: 15px;
+  color: #ebf0fd;
+  transition: 0.5s;
+}
+.divProductos__boton:hover {
+  background-color: #6077b6;
+  border-color: #6077b6;
+  transform: scale(1.1);
+}
+.divProductos__precio {
+  font-size: 20px;
+  color: #5d5d5d;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-top: 20px;
+}
+.divProductos__precioConDescuento {
+  font-size: 20px;
+  color: #6077b6;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-top: 20px;
+}
+
+.botonBuscar {
+  background-color: #bbcdff;
+  color: #272727;
+  border-color: #bbcdff;
+}
+
+.botonBuscar:hover {
+  background-color: #6077b6;
+  color: #ebf0fd;
+  border-color: #6077b6;
+}
+
+span {
+  color: #444444;
+  letter-spacing: 3px;
+}
+
+.footer__div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  background-color: #bbcdff;
+  color: antiquewhite;
+}
+
+.iconoNav {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0px;
+}
+
+.logoMarca__logo {
+  width: 100px;
+  height: 100px;
+}
+.logoMarca__texto {
+  font-size: 30px;
+  color: white;
+}
+
+.footerDiv1 {
+  text-decoration: none;
+}
+.footerDiv1__lista {
+  list-style: none;
+  padding: 0;
+}
+.footerDiv1__enlace {
+  text-decoration: none;
+  color: #416aad;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.footerDiv1__enlace:hover {
+  color: white;
+}
+.footerDiv1__item {
+  margin: 20px 0px 20px 0px;
+}
+
+.footerDiv2 {
+  text-decoration: none;
+}
+.footerDiv2__lista {
+  list-style: none;
+  padding: 0;
+}
+.footerDiv2__enlace {
+  text-decoration: none;
+  color: #416aad;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 17px;
+}
+.footerDiv2__enlace:hover {
+  color: white;
+}
+.footerDiv2__item {
+  margin: 20px 0px 20px 0px;
+}
+
+.carousel-item {
+  width: 800px;
+  height: 250px;
+}
+
+#carouselExampleFade {
+  width: 800px;
+  height: 250px;
+  margin: 30px auto 50px auto;
+}
+
+.carousel-inner {
+  width: 800px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.d-block {
+  margin: auto;
+  width: 800px;
+  height: 250px;
+}/*# sourceMappingURL=style.css.map */
