@@ -5,6 +5,7 @@ const contenedorCarrito = document.querySelector('#carrito tbody');
 const contenedorCarritoSuma = document.querySelector('#carrito .totalSuma');
 const vaciarCarritoBtn = document.querySelector('#vaciarCarrito');
 let productosCarrito = [];
+let totalCompra = document.querySelector('#footerCarrito .textoTotal');
 
 
 cargarEventlisteners();
@@ -16,6 +17,10 @@ function cargarEventlisteners() {
   document.addEventListener('DOMContentLoaded',()=> {
     productosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carritoHTML();
+  });
+  document.addEventListener('DOMContentLoaded',()=> {
+    totalCompra = JSON.parse(localStorage.getItem('total'));
+    sumarTotal();
   });
 
 
@@ -155,10 +160,10 @@ function limpiarHTML() {
 function sumarTotal() {
   contenedorCarritoSuma.innerHTML= '';
   let total =0;
+  
   productosCarrito.forEach( producto => { total += (parseInt(producto.precio) * producto.cantidad)
     contenedorCarritoSuma.innerHTML= '';
-    const sumaTabla = document.createElement('div');
-    
+    const sumaTabla = document.createElement('div');    
     sumaTabla.innerHTML= `  
     <div id="footerCarrito">  
      <p class="textoTotal">TOTAL COMPRA: $${total}</p> 
@@ -167,8 +172,8 @@ function sumarTotal() {
          
     `;
     contenedorCarritoSuma.append(sumaTabla);   
-  
-    console.log(total);  
+    const totalString = JSON.stringify(total);
+    localStorage.setItem('total', totalString);
 
     // mensaje boton compra
     const compraCarritoBtn = document.querySelector('#footerCarrito .botonComprar');   
