@@ -43,6 +43,7 @@ function cargarEventlisteners() {
 //elimina producto del carrito 
 
 function eliminarProducto(e) {  
+  e.preventDefault();
   if (e.target.classList.contains('botonEliminarImg')) {
       const productoId = e.target.getAttribute('data-id');
       console.log(productoId);
@@ -55,6 +56,7 @@ function eliminarProducto(e) {
 
 
 function agregarProducto(e) {
+  e.preventDefault();
   if (e.target.classList.contains('divProductos__boton')) {
     const productoSeleccionado = e.target.parentElement;
     leerDatosProductos(productoSeleccionado);
