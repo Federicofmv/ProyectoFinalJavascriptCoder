@@ -10,14 +10,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   &__titulo {
     margin: 0;
     margin-left: 15px;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+    color: rgb(255, 255, 255);    
     font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 12px;
   }
+}
+.navbar-brand {
+  font-size: 15px;
 }
 .main {
   &__div {
@@ -38,7 +42,7 @@
   &__texto {
     color: rgb(255, 255, 255);    
     font-family: "PT Sans Narrow", sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;    
     margin: 0;    
     font-weight: 400;
@@ -53,14 +57,14 @@
 
 }
 .divProductos {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-content: center; 
-  column-gap: 50px; 
-  row-gap: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
 
   &__div {
     margin: 50px 0 50px 0;      
@@ -68,7 +72,7 @@
    
   }
   &__imagen {
-    width: 70%;
+    width: 50%;
     margin: 30px auto 30px auto;
     transition: 1s;    
   }
@@ -141,9 +145,10 @@ span {
 .footer__div {
     margin-top: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
+    height: auto;
     background-color:rgb(187, 205, 255) ;
     color: antiquewhite;
 }
@@ -159,7 +164,7 @@ span {
 
     }
     &__texto {
-        font-size: 30px;
+        font-size: 20px;
         color: white;
     }
 }
@@ -168,16 +173,18 @@ span {
     &__lista {
         list-style: none;
         padding: 0;
+        text-align: center;
 
     }
     &__enlace {
         text-decoration: none;
-        color: rgb(65, 106, 173);
+        color: white;
         font-family: "PT Sans Narrow", sans-serif;
     }
     &__enlace:hover {
-        color: white;
-    }
+        
+        color: rgb(65, 106, 173);
+    } 
     &__item {        
         margin: 20px 0px 20px 0px;
     }
@@ -204,8 +211,8 @@ span {
 }
 
 .carousel-item {
-    width: 800px;
-    height: 250px;
+    width: 100%;
+    height: 100px;
     
 }
 .carousel-control-next{
@@ -217,21 +224,21 @@ span {
   display: none;
 }
 #carouselExampleFade {    
-    width: 800px;
-    height: 250px;
+    width: 100%;
+    height: 100px;
     margin: 30px auto 50px auto;    
     
 }
 .carousel-inner {      
     z-index: -1;
-    width: 800px;
-    height: 250px;    
+    width: 100%;
+    height: 100px;   
     border-radius: 15px;
 }
 .d-block {
     margin: auto;
-    width: 800px;
-    height: 250px;
+    width: 100%;
+    height: 100px;
 }
 .menuCarrito {
   position:absolute;
@@ -247,7 +254,9 @@ ul {
 }
 
 .submenu__img {
-  width: 30px;
+  width: 20px;
+  display: flex;
+  align-items: center;
 
 }
 .submenu #carrito{
@@ -262,7 +271,7 @@ ul {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   min-height: 100px;
-  min-width: 550px;
+  min-width: 150px;
   border-radius: 10px;
   border: 1px solid rgb(173, 173, 173);
   
@@ -394,7 +403,7 @@ tr td {
 .divProductos {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-content: center; 
@@ -407,7 +416,7 @@ tr td {
    
   }
   &__imagen {
-    width: 70%;
+    width: 60%;
     margin: 30px auto 30px auto;
     transition: 1s;    
   }
@@ -612,6 +621,7 @@ ul {
 th {
   font-family: "PT Sans Narrow", sans-serif;  
   text-align: center;
+  font-size: 15px;
 }
 #vaciarCarrito {
   font-size: 15px;
@@ -640,7 +650,8 @@ th {
 tr td {
   padding-top: 30px;
   font-family: "PT Sans Narrow", sans-serif;  
-  text-align: center;  
+  text-align: center; 
+  font-size: 15px; 
 }
 .botonEliminarImg {
   width: 30px;
